@@ -1,0 +1,129 @@
+body {
+  /* ini font untuk isi web */
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  /* ini font untuk judul web (elviracantik) */
+  font-family: "Sacramento", sans-serif;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* STYLE UNTUK NAVBAR */
+
+/* ini style untuk navbar keseluruhan */
+.navbar {
+  /* ini untuk menghilangkan dot pada unordered list */
+  list-style-type: none;
+
+  /* untuk minimin jaraknya */
+  margin: 0;
+  padding: 0;
+  /* ini untuk batasin navbarnya */
+  overflow: hidden;
+  /* ini buat ubah warna navbarnya */
+  background-color: rgb(0, 0, 0);
+  /* border radius biar pinggirannya ga tajem */
+  border-radius: 5px;
+}
+
+/* ini style agar item di navbarnya ga berwarna biru dan bergaris bawah */
+.navbar a {
+  /* menghilangkan underline */
+  text-decoration: none;
+
+  /* mengubah warna teks jadi warna putih */
+  color: white;
+}
+
+/* ini style untuk item navbarnya */
+.navbar-item {
+  /* biar item navbarnya mulai dari kiri */
+  float: left;
+  display: block;
+  color: rgb(255, 167, 209);
+  /* padding untuk memperbesar item di navbar */
+  padding: 14px 16px;
+}
+
+/* ini style agar item navbar saat dihover berubah warna */
+.navbar-item:hover {
+  background-color: rgb(47, 47, 47);
+  color: pink;
+}
+
+
+/* Ini style bagian tabel sinopsis secara keseluruhan */
+.synopsis {
+  /* untuk warnain begron bagian tabel sinopsis */
+  background-color: rgb(35, 34, 34);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  /* margin untuk kasih jarak item ke sisi sisinya */
+  margin: 2px;
+}
+
+/* .review {
+  margin-left: 10px;
+  justify-content: center;
+} */
+
+/* mengatur ukuran gambar barbie serta bentuknya */
+.gambarbarbie {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* ini untuk ketengahkan bagian rekomendasi termasuk isinya beserta teks yang ada di bawahnya*/
+.rekomendasi {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ini untuk kumpulan rekomendasi film agar berada di tengah */
+.rec-list {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ini untuk tiap objek film yang direkomendasikan */
+/* transition: transform digunakan untuk ketika film dihover (lihat .mov-rec:hover) maka ukuran film akan berubah menjadi 1.1 dan transisi dilakukan selama 0.3s */
+.mov-rec {
+  transition: transform 0.3s ease-in-out;
+}
+.mov-rec:hover {
+  transform: scale(1.1);
+}
+
+/* ini untuk footer */
+.footer {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(35, 34, 34);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* untuk ngegayain tabelnya, width 100% biar ukurannya penuhin layar */
+table {
+  width: 100%;
+  /* border ini buat liat batasan tabelnya, hapus border ini kalo udah kelar analisis */
+  border: 1px solid black;
+}
+
+td {
+  padding-left: 10px;
+  height: 20px;
+  /* border ini buat liat batasan kolom tabelnya, hapus border ini kalo udah kelar analisis */
+  border: 1px solid rgb(255, 0, 0);
+}
+
+/* table td {
+  text-align: center;
+  vertical-align: middle;
+} */

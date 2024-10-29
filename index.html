@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ini bar navigasi, isinya ada tab sinopsis, tab rekomendasi, sama tab logo. Dia memiliki class navbar-->
+    <ul class="navbar">
+        <li class="navbar-item"><a href="#Synopsis">Synopsis</a></li>
+        <li class="navbar-item"><a href="#Rekomendasi">Recommendations</a></li>
+        <li class="title navbar-item " style="float: right;">Elviracantik</li>
+    </ul>
+    <!-- div ini adalah pembungkus -->
+    <!-- <img src="https://placehold.co/600x400" alt="" class="gambarbarbie">
+        <div class="review">
+            <h1>ABOUT</h1>
+            <p>Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie
+                Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of
+                living among humans.</p>
+
+            <h3>Rating</h3>
+            <p>⭐⭐⭐⭐4</p>
+
+            <h3>Lihat selengkapnya di sini</h3>
+            <p><a href="https://www.themoviedb.org/movie/346698-barbie" target="_blank">TMDB Barbie (2023)</a></p>
+        </div> -->
+
+    <!-- tabel untuk tampilan sinopsis, kolom kiri adalah kolom gambar, kolom kanan adalah kolom sinopsis dan rating -->
+    <table class="synopsis" id="Synopsis">
+        <!-- tr stands for table row -->
+        <tr>
+            <!-- td stands for table data, data pertama ini isinya gambar barbie -->
+            <td><img src="/assets/barbie.jpg" alt="" class="gambarbarbie"></td>
+
+            <!-- ini data kedua, isinya sinopsis barbie -->
+            <td>
+                <div>
+                    <h1>ABOUT</h1>
+                    <p>Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world
+                        of Barbie
+                        Land. However, when they get a chance to go to the real world, they soon discover the joys
+                        and perils of
+                        living among humans.</p>
+
+                    <h3>Rating</h3>
+                    <p>⭐6.8/10</p>
+
+                    <h3>Lihat selengkapnya di sini</h3>
+                    <!-- ini link ke tmdb berupa tulisan, kalo misal tulisannya diklik maka akan buka halaman tmdbnya barbie -->
+                    <!-- target=_blank berguna untuk buka halaman di tab baru -->
+                    <p><a href="https://www.themoviedb.org/movie/346698-barbie" target="_blank">TMDB Barbie
+                            (2023)</a></p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- <div class="rekomendasi">
+        <h2>MOVIE RECOMMENDATIONS</h2>
+        <ul class="rec-list">
+            <div class="mov-rec">
+                <li><img src="https://placehold.co/200x300" alt=""></li>
+                <h4>Ini budi</h4>
+            </div>
+            <div class="mov-rec">
+                <li><img src="https://placehold.co/200x300" alt=""></li>
+                <h4>Ini bapak budi</h4>
+            </div>
+            <div class="mov-rec">
+                <li><img src="https://placehold.co/200x300" alt=""></li>
+                <h4>Ini ibu budi</h4>
+            </div>
+            <div class="mov-rec">
+                <li><img src="https://placehold.co/200x300" alt=""></li>
+                <h4>Ini kakak budi</h4>
+            </div>
+        </ul>
+    </div> -->
+
+    <!-- ini tabel untuk rekomendasi film -->
+    <div class="rekomendasi" id="Rekomendasi">
+        <!-- untuk judul tabel -->
+        <h2>Movie Recommendations</h2>
+
+        <!-- ini tabel rekomendasi film yang hanya terdiri dari 1 baris-->
+        <table>
+            <tr class="rec-list">
+                <!-- kolom1: film1 -->
+                <td class="mov-rec">
+                    <img src="https://placehold.co/200x300" alt="">
+                    <p>Film1</p>
+                </td>
+                <!-- kolom2: film2 -->
+                <td class="mov-rec">
+                    <img src="https://placehold.co/200x300" alt="">
+                    <p>Film2</p>
+                </td>
+                <!-- kolom3: film3 -->
+                <td class="mov-rec">
+                    <img src="https://placehold.co/200x300" alt="">
+                    <p>Film3</p>
+                </td>
+                <!-- kolom4: film4 -->
+                <td class="mov-rec">
+                    <img src="https://placehold.co/200x300" alt="">
+                    <p>Film4</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ini tabel untuk footer terdiri dari 2 baris-->
+    <table class="footer" id="Footer">
+        <tr>
+            <td>Elvira Zaretti</td>
+            <td>Mini Project</td>
+        </tr>
+        <tr>
+            <td>2310511055</td>
+            <td>WEB BASIC TSC</td>
+        </tr>
+    </table>
+</body>
+
+</html>
