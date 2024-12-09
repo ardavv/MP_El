@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f8bbd5, white);
+  /* ini font untuk isi web */
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.435);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.foto {
+  flex: 1;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.desc {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desc h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.desc p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+.medsos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
